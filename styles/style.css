@@ -44,10 +44,13 @@ img {
 .btn {
   background-color: var(--clr-primary);
   color: var(--clr-white);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  padding: 0.875rem 1.2rem;
+  padding: 0.5rem 1.2rem;
   box-shadow: 5px 5px 12px rgba(0,0,0,0.2);
+  color: var(--clr-text);
+  border: none;
+  border-radius: 2px;
 }
 
 header {
@@ -78,10 +81,73 @@ header {
   position: absolute;
   z-index: 10;
   height: 4rem;
-  background-color: #e50914;
   top: 0;
   right: 0;
   width: 100%;
 }
   
-   
+.nav__container {
+  display: flex;
+  padding: 2.25rem 3.2rem;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.nav__logo {
+  width: 10rem;
+}
+
+.hero {
+  width: 40%;
+  height: 50%;
+  margin: auto;
+  /* background-color: #e50914; */
+  z-index: 10;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-text);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 3.375rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.35rem;
+  line-height: 1.5;
+  /* gap: 3rem; */
+}
+
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+  
+.hero__cta input {
+  font-size: 1.2rem;
+  padding: 1.2rem 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+.hero__cta .btn {
+  width: 32%;
+  margin: auto;
+  padding: 0.875rem 1.2rem;
+}
